@@ -1,19 +1,23 @@
-import { Puff } from 'react-loader-spinner';
-import { LoaderPosition } from './Loader.styled';
+import { LineWave } from 'react-loader-spinner';
+import { LoaderContainer } from './Loader.styled';
 
-export function Loader() {
+const Loader = () => {
   return (
-    <LoaderPosition>
-      <Puff
-        height="80"
-        width="80"
-        radisu={1}
-        color="#3d8a81"
-        ariaLabel="puff-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
-        visible={true}
-      />
-    </LoaderPosition>
+    <LoaderContainer role="alert">
+    <LineWave
+  height="100"
+  width="100"
+  color="#4fa94d"
+  ariaLabel="line-wave"
+  wrapperStyle={{}}
+  wrapperClass=""
+  visible={true}
+  firstLineColor=""
+  middleLineColor=""
+  lastLineColor=""
+/>
+    </LoaderContainer>
   );
-}
+};
+
+export default Loader;
