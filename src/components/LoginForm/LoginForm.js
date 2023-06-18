@@ -11,14 +11,14 @@ export const LoginForm = () => {
     const form = e.currentTarget;
     dispatch(
       logIn(
-        {
-          email: form.elements.email.value,
-          password: form.elements.password.value,
-        }
         // {
-        //   email: 'dashanikula26@gmail.com',
-        //   password: 'corbs1401',
+        //   email: form.elements.email.value,
+        //   password: form.elements.password.value,
         // }
+        {
+          email: 'dashanikula26@gmail.com',
+          password: 'corbs1401',
+        }
       )
     );
     form.reset();
