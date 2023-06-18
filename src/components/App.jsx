@@ -14,7 +14,7 @@ import { Loader } from 'components/Loader/Loader';
 
 export function App() {
   const dispatch = useDispatch();
-  const { isRefreshing } = useAuth();
+  const isRefreshing = useAuth();
 
   useEffect(() => {
     dispatch(refreshUser());
