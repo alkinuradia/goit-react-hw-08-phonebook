@@ -11,16 +11,16 @@ export const RegisterForm = () => {
 
     dispatch(
       register(
-        // {
-        //   name: form.elements.name.value,
-        //   email: form.elements.email.value,
-        //   password: form.elements.password.value,
-        // }
         {
-          name: 'Dasha',
-          email: 'dashanikula26@gmail.com',
-          password: 'corbs1401',
+          name: form.elements.name.value,
+          email: form.elements.email.value,
+          password: form.elements.password.value,
         }
+        // // {
+        // //   name: 'Dasha',
+        //   email: 'dashanikula26@gmail.com',
+        //   password: 'corbs1401',
+        // // }
       )
     );
 
